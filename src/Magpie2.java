@@ -39,10 +39,20 @@ public class Magpie2 {
 				|| statement.indexOf("brother") >= 0
 				 	) {				
 			response = "Tell me more about your family.";
-		} else if (statement.indexOf("dog") >= 0 || statement.indexOf("cat")){
+		} else if (statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0){
 			response = "Tell me more about your pets";
 
-		}
+		} else if ((statement.trim()).length() == 0){
+			response = "Say something please.";
+ 
+		} else if (statement.indexOf("video game") >= 0){
+			response = "What games do you like?";
+		} else if (statement.indexOf("Nathan") >=0 ) {
+			response = "I know of a Nathan Harris he likes a cup of joe";
+		
+		} else if (statement.indexOf("Joe Swanson") >=0 ){ 
+			response = "Joe Swanson from Family guy?";
+		
 		} else {
 			response = getRandomResponse();
 		}
