@@ -66,6 +66,8 @@ public class Magpie3 {
 
 		// Refinement--make sure the goal isn't part of a
 		// word
+		int iteration = 1; 
+
 		while (psn >= 0) {
 			// Find the string of length 1 before and after
 			// the word
@@ -92,8 +94,12 @@ public class Magpie3 {
 			// The last position didn't work, so let's find
 			// the next, if there is one.
 			psn = phrase.indexOf(goal, psn + 1);
+			iteration = iteration + 1; 
+			System.out.println(iteration);
+		
 
 		}
+
 
 		return -1;
 	}
