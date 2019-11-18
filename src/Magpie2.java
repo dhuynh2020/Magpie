@@ -59,6 +59,15 @@ public class Magpie2 {
 		return response;
 	}
 
+	private findKeyword(String statement, String goal, int startPos) { 
+		String phrase = statement.trim().toLowerCase();
+		goal = goal.toLowerCase();
+
+		int psn = [phrase.indexOf(goal,starPos);
+		
+		While (Psn)
+	}
+
 
 	/**
 	 * Pick a default response to use if nothing else fits.
@@ -84,3 +93,4 @@ public class Magpie2 {
 		return response;
 	}
 }
+
